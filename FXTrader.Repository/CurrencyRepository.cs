@@ -18,6 +18,11 @@ namespace FXTrader.Repository
 
         #region ICurrencyRepository Members
 
+        /// <summary>
+        /// Get's Currency by ID
+        /// </summary>
+        /// <param name="id"></param>
+        /// <returns>Currency Object</returns>
         public Currency GetById(int id)
         {
             return FindBy(x => x.Id == id).FirstOrDefault();
