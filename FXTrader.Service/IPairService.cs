@@ -5,9 +5,9 @@ using System.Text;
 using System.Threading.Tasks;
 using FXTrader.Model;
 
-namespace FXTrader.Repository
+namespace FXTrader.Service
 {
-    public interface IPairRepository : IGenericRepository<Pair>
+    public interface IPairService : IEntityService<Pair>
     {
         Pair GetById(int id);
     }

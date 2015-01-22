@@ -1,0 +1,66 @@
+﻿@model FXTrader.Model.Pair
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Pair</h4>
+	<hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Currency.Title)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Currency.Title)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Title)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Title)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Commission)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Commission)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Miltiplier)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Miltiplier)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Increment)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Increment)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.MaxChange)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.MaxChange)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.Id }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

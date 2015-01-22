@@ -18,7 +18,6 @@ namespace FXTrader.Model
         public string Title { get; set; }
 
         [Required]
-        [MaxLength(10000)]
         public double Commission { get; set; }
         
         [Required]
